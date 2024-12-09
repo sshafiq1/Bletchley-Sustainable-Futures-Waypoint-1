@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3 uid="uid://c5p2ou2n5ee2j"]
+
+[ext_resource type="Texture2D" uid="uid://dykdgq32vpr4q" path="res://CosmicLilac_AnimatedSpriteSheet/CosmicLilac_AnimatedSpriteSheet.png" id="1_msvn2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2p42q"]
+radius = 53.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbqxh"]
+atlas = ExtResource("1_msvn2")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb1pq"]
+atlas = ExtResource("1_msvn2")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g148o"]
+atlas = ExtResource("1_msvn2")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oysts"]
+atlas = ExtResource("1_msvn2")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qe1a"]
+atlas = ExtResource("1_msvn2")
+region = Rect2(64, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n73m"]
+atlas = ExtResource("1_msvn2")
+region = Rect2(80, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxq43"]
+atlas = ExtResource("1_msvn2")
+region = Rect2(96, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2sh2f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbqxh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb1pq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g148o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oysts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qe1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n73m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxq43")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_2p42q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(1.19209e-06, 9.53674e-07)
+scale = Vector2(3.625, 4.125)
+sprite_frames = SubResource("SpriteFrames_2sh2f")
+frame_progress = 0.228833

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://caa3gndhvjx57"]
+
+[ext_resource type="PackedScene" uid="uid://dj0lpkjfyl1sj" path="res://scenes/background.tscn" id="1_6obg3"]
+[ext_resource type="PackedScene" uid="uid://c5p2ou2n5ee2j" path="res://scenes/char.tscn" id="2_jmgwv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_6obg3")]
+
+[node name="char" parent="." instance=ExtResource("2_jmgwv")]
+position = Vector2(476, 299)

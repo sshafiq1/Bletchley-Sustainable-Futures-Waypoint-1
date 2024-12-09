@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://w360ramp8ajb"]
+
+[ext_resource type="Texture2D" path="res://Background/city 1/1.png" id="1_1n3fw"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(1150, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(577, 326)
+scale = Vector2(2.00347, 2.00617)
+texture = ExtResource("1_1n3fw")
