@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://c1g1aejgfkrr3"]
 
-[ext_resource type="Texture2D" path="res://CosmicLilac_AnimatedSpriteSheet/CosmicLilac_AnimatedSpriteSheet.png" id="1_msvn2"]
+[ext_resource type="Texture2D" uid="uid://dykdgq32vpr4q" path="res://assets/CosmicLilac_AnimatedSpriteSheet/CosmicLilac_AnimatedSpriteSheet.png" id="1_msvn2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2p42q"]
 radius = 41.0122
